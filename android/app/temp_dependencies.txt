@@ -1,0 +1,8 @@
+dependencies {
+    implementation("com.google.mlkit:text-recognition:16.0.0")
+    // Latin is included by default, but adding explicitly doesn't hurt, or we can rely on the plugin.
+    // However, the plugin usually handles this. The user snippet was for specific languages.
+    // For now I'll skip adding specific implementations because the plugin handles the bundled model.
+    // But I will add the block just in case I need it later or for other configs.
+    // Actually, I'll invoke the plugin's transitive dependencies.
+}
