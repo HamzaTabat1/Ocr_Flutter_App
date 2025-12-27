@@ -28,7 +28,10 @@ class SmartActionService {
   static final List<String> _addressKeywords = [
     'St', 'Street', 'Ave', 'Avenue', 'Rd', 'Road', 'Blvd', 'Boulevard',
     'Ln', 'Lane', 'Dr', 'Drive', 'Court', 'Ct', 'Plaza', 'Square', 'Hwy', 'Highway',
-    'Parkway', 'Pkwy', 'Way', 'Cir', 'Circle', 'Walk', 'Loop', 'Place', 'Pl', 'Terrace', 'Dr', 'Drive'
+    'Parkway', 'Pkwy', 'Way', 'Cir', 'Circle', 'Walk', 'Loop', 'Place', 'Pl', 'Terrace',
+    // Moroccan/French keywords
+    'Rue', 'Av', 'Bd', 'Quartier', 'Hay', 'Lotissement', 'Résidence', 'Immeuble', 
+    'Appt', 'N°', 'Route', 'Impasse', 'Passage'
   ];
 
   List<SmartAction> parseText(String text) {
